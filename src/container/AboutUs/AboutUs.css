@@ -1,0 +1,97 @@
+.app__aboutus {
+  position: relative;
+}
+.app__aboutus-overlay {
+  position: absolute;
+  inset: 0;
+}
+.app__aboutus-overlay img {
+  width: 400px;
+  height: 415px;
+  z-index: 0;
+}
+
+.app__aboutus-content {
+  display: flex;
+  height: max-content;
+  align-items: center;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.app__aboutus-content_knife {
+  z-index: 4;
+}
+.app__aboutus-content_knife img {
+  height: 700px;
+}
+
+.app__aboutus-content_about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  text-align: right;
+  z-index: 4;
+}
+
+.app__aboutus-content_about h2,
+.app__aboutus-content_history h2 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--color-golden);
+  font-family: var(--font-base);
+}
+
+.app__aboutus-content_about p,
+.app__aboutus-content_history p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+  margin: 2rem 0;
+}
+.app__aboutus-content_history {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  text-align: left;
+  z-index: 4;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__aboutus-content_about h2,
+  .app__aboutus-content_history h2 {
+    font-size: 52px;
+    line-height: 120%;
+  }
+  .app__aboutus-content {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app__aboutus-content {
+    flex-direction: column;
+  }
+  .app__aboutus-content_about h2,
+  .app__aboutus-content_history h2 {
+    font-size: 64px;
+    line-height: 130%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app__aboutus-overlay img {
+    width: 300px;
+    height: 315px;
+  }
+}

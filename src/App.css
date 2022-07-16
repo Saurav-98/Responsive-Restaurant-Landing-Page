@@ -1,7 +1,10 @@
 .section__padding {
   padding: 4rem 6rem;
 }
-
+.app {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
 .flex__center {
   display: flex;
   justify-content: center;
@@ -18,7 +21,7 @@
 
 .app__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   min-height: 100vh;
@@ -174,4 +177,8 @@
     font-size: 45px;
     line-height: 70px;
   }
+}
+
+.section__container {
+  max-width: 1600px;
 }
